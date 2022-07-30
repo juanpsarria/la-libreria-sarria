@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+.grid-config {
+    width: 100%;
+    color: #120200;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+    ;
+}
+
+/*--HEADER--*/
+
+header {
+    color: aliceblue;
+    background-color: #120200;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.buscador {
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+/*---NAVEGADOR---*/
+
+nav {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #120200;
+    grid-area: nav;
+}
+
+nav ul {
+    color: aliceblue;
+    text-align: center;
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/*---MAIN---*/
+
+main {
+    grid-area: main;
+}
+
+/*---MAIN INDEX---*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.banner div {
+    width: 70%;
+}
+
+.banner h2 {
+    font-size: 400%;
+    color: aliceblue;
+    text-shadow: 3px 3px 1px #120200;
+    letter-spacing: 5px;
+    margin: 0px 0px 40px 20px;
+}
+
+.banner p {
+    font-size: 200%;
+    color: aliceblue;
+    text-shadow: 3px 3px 1px #120200;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+
+.seccion__titulo {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.contenedor__tarjeta{
+    width: 250px;
+    height: 350px;
+    border: 1px solid whitesmoke;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 8px 10px 10px -8px #AF99AD;
+    transition: 1s;
+}
+
+.contenedor__tarjeta__img {
+    width: 140px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.contenedor__tarjeta__titulo-autor {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contenedro__tarjeta__boton {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    background-color: #120200;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*-------FIN SECTION DE NUEVOS INGRESOS-------*/
+
+/*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
+
+/*-------FIN MAIN INDEX-------*/
+
+/*-------INICIO PAGINA LIBROS-------*/
+
+.libros {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.libros p {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+/*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
+
+/*-------FIN PAGINA LIBROS-------*/
+
+/*-------INICIO PÁGINA TOP 10-------*/
+
+.tabla {
+    padding: 20px;
+    width: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px) (7, 200px);
+    grid-template-areas:
+        "uno dos"
+        "uno tres"
+        "cuatro cuatro"
+        "cinco cinco"
+        "seis seis"
+        "siete siete"
+        "ocho ocho"
+        "nueve nueve"
+        "diez diez"
+    ;
+}
+
+.tabla div {
+    border: dotted #120200;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: flex;
+}
+
+.tabla div p:first-child {
+    font-weight: bold;
+}
+
+.tabla div p:nth-child(2) {
+    text-align: justify;
+}
+
+.tabla div img {
+    width: 140px;
+    height: 200px;
+}
+
+#uno {
+    grid-area: uno;
+    background-color: rgb(255, 234, 115);
+}
+
+#dos {
+    grid-area: dos;
+    background-color: silver;
+}
+
+#tres {
+    grid-area: tres;
+    background-color: rgb(205, 127, 50);
+}
+
+#cuatro {
+    grid-area: cuatro;
+}
+
+#cinco {
+    grid-area: cinco;
+}
+
+#seis {
+    grid-area: seis;
+}
+
+#siete {
+    grid-area: siete;
+}
+
+#ocho {
+    grid-area: ocho;
+}
+
+#nueve {
+    grid-area: nueve;
+}
+
+#diez {
+    grid-area: diez;
+}
+
+/*-----FIN PÁGINA TOP 10-----*/
+
+/*----INICIO PÁGINA QUIÉNES SOMOS----*/
+
+.quienes-somos__titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.historia,
+.mision,
+.vision {
+    text-align: justify;
+    margin: 0px 20px 20px 20px;
+    line-height: 200%;
+}
+
+
+/*-------INICIO PAGINA CONTACTO-------*/
+/*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
+
+.main-contactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    line-height: 250%;
+}
+
+.formulario-de-contacto {
+    text-align: center;
+}
+
+.barra {
+    width: 100%;
+}
+
+.boton-formulario{
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-color: #120200;
+    width: 30%;
+    border-radius: 5%;
+}
+
+#mensaje{
+    width: 100%;
+}
+
+.telefonos-de-contacto {
+    text-align: left;
+}
+
+
+/*-------FIN PAGINA CONTACTO-------*/
+
+
+/*-------BOTÓN WHATSAPP-------*/
+.boton-whatsapp img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+/*-------INICIO FOOTER-------*/
+
+footer {
+    background-color: #120200;
+    grid-area: footer;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer div div nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div div nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+footer div div h2 {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa {
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------FIN FOOTER-------*/
+
+/*-------RESPONSIVE-------*/
+
+@media screen and (max-width:1024px) {
+    .boton-whatsapp img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:888px) {
+    .banner h2 {
+        font-size: 300%;
+    }
+
+    .banner p {
+        font-size: 150%;
+    }
+
+    .tabla {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+            "siete"
+            "ocho"
+            "nueve"
+            "diez";
+    }
+
+    .main-contactos {
+        flex-direction: column;
+    }
+
+    .formulario-de-contacto {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .barra {
+        width: none;
+    }
+    
+    .boton-formulario{
+        width: none;
+    }
+
+    .telefonos-de-contacto {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:579px) {
+    .buscador {
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .banner div {
+        width: 80%;
+    }
+
+    .banner h2 {
+        font-size: 250%;
+    }
+
+    .banner p {
+        font-size: 125%;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .grid-config {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer"
+        ;
+    }
+
+    nav ul {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 70vh;
+    }
+
+    .banner h2 {
+        font-size: 200%;
+    }
+
+    .banner p {
+        font-size: 100%;
+    }
+
+    .libros p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:363px) {
+    .banner div {
+        width: 80%;
+    }
+
+    .banner h2 {
+        font-size: 150%;
+    }
+
+    .banner p {
+        font-size: 75%;
+    }
+
+    .barra {
+        width: 83%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner {
+        height: 50vh;
+    }
+    .contenedor__tarjeta {
+        box-shadow: none;
+    }
+    .libros p {
+        font-size: 20px;
+    }
+    .main-contactos {
+        line-height: 200%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .formulario-de-contacto {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .telefonos-de-contacto {
+        text-align: center;
+    }
+    .boton-whatsapp img {
+        width: 40px;
+        height: 40px;
+    }
+}
