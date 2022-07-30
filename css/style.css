@@ -74,6 +74,10 @@ nav ul li a {
     font-size: 20px;
 }
 
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
 /*---MAIN---*/
 
 main {
@@ -143,6 +147,10 @@ main {
     transition: 1s;
 }
 
+.contenedor__tarjeta:hover {
+    transform: scale(1.1);
+}
+
 .contenedor__tarjeta__img {
     width: 140px;
     height: 200px;
@@ -161,6 +169,12 @@ main {
     background-color: #120200;
     padding: 5px;
     border-radius: 5px;
+}
+
+.contenedro__tarjeta__boton:hover{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(92, 138, 92);
 }
 
 /*-------FIN SECTION DE NUEVOS INGRESOS-------*/
@@ -541,6 +555,9 @@ footer div div h2 {
     }
     .contenedor__tarjeta {
         box-shadow: none;
+    }
+    .contenedor__tarjeta:hover {
+        display: none;
     }
     .libros p {
         font-size: 20px;
