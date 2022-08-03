@@ -190,6 +190,12 @@ main {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+    animation: typewriter;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
 }
 
 .libros p {
