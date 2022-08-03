@@ -8,13 +8,12 @@
 
 .grid-config {
     width: 100%;
-    color: #120200;
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "header header header"
-        "nav nav nav"
+        "searcher searcher searcher"
         "main main main"
         "footer footer footer"
     ;
@@ -22,60 +21,35 @@
 
 /*--HEADER--*/
 
-header {
+header{
     color: aliceblue;
     background-color: #120200;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     grid-area: header;
 }
 
-header img {
-    width: 100px;
-    height: 100px;
-    padding-left: 20px;
+.navbar-brand{
+    font-size: 2em;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.buscador {
-    width: 300px;
-    height: 25px;
-    border-radius: 25px;
-}
-
-/*---NAVEGADOR---*/
-
-nav {
-    color: aliceblue;
-    text-decoration: none;
-    background-color: #120200;
-    grid-area: nav;
-}
-
-nav ul {
-    color: aliceblue;
-    text-align: center;
-    margin: 20px;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
-}
-
-nav ul li a:hover{
+.navbar-brand:hover{
     text-decoration: underline;
+}
+
+.nav-link{
+    font-size: 1.5em;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.buscador{
+    background-color: #120200;
+    grid-area: searcher;
+}
+
+.form-control{
+    width: 100%;
 }
 
 /*---MAIN---*/
@@ -86,39 +60,18 @@ main {
 
 /*---MAIN INDEX---*/
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../img/banner.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: none;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+/*---CAROUSEL---*/
+
+.carousel{
+    margin-bottom: 50px;
 }
 
-.banner div {
-    width: 70%;
-}
-
-.banner h2 {
-    font-size: 400%;
-    color: aliceblue;
+.carousel-text{
+    font-size: 5em;
     text-shadow: 3px 3px 1px #120200;
-    letter-spacing: 5px;
-    margin: 0px 0px 40px 20px;
 }
 
-.banner p {
-    font-size: 200%;
-    color: aliceblue;
-    text-shadow: 3px 3px 1px #120200;
-    letter-spacing: 5px;
-    margin-left: 20px;
-}
+/*---INICIO SECTION NUEVOS INGRESOS---*/
 
 .seccion__titulo {
     font-size: 30px;
@@ -136,42 +89,45 @@ main {
     margin-bottom: 50px;
 }
 
-.contenedor__tarjeta{
+.card{
     width: 250px;
     height: 350px;
     border: 1px solid whitesmoke;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
+    align-items: center;
     margin-bottom: 10px;
     box-shadow: 8px 10px 10px -8px #AF99AD;
     transition: 1s;
 }
 
-.contenedor__tarjeta:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
-.contenedor__tarjeta__img {
+.card-img{
     width: 140px;
     height: 200px;
     margin-top: 10px;
 }
 
-.contenedor__tarjeta__titulo-autor {
+.card-title{
+    font-size: 1.6em;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.contenedro__tarjeta__boton {
+.btn{
     text-decoration: none;
     color: aliceblue;
     font-size: 15px;
     background-color: #120200;
     padding: 5px;
     border-radius: 5px;
+    border: solid 1px white;
 }
 
-.contenedro__tarjeta__boton:hover{
+.btn:hover{
     color: black;
     font-weight: bold;
     background-color: rgb(92, 138, 92);
@@ -190,12 +146,6 @@ main {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
-    animation: typewriter;
-}
-
-@keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
 }
 
 .libros p {
@@ -367,8 +317,11 @@ main {
 /*-------INICIO FOOTER-------*/
 
 footer {
+    color: aliceblue;
     background-color: #120200;
     grid-area: footer;
+    align-items: center;
+    justify-content: center;
 }
 
 footer div {
@@ -387,13 +340,21 @@ footer div div nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-footer div div nav ul li a {
+footer div div nav ul li a{
+    color: aliceblue;
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
     line-height: 150%;
+}
+
+footer div div nav ul li a:hover{
+    color: aliceblue;
+    text-decoration: underline;
 }
 
 footer div div h2 {
@@ -429,14 +390,10 @@ footer div div h2 {
 }
 
 @media screen and (max-width:888px) {
-    .banner h2 {
-        font-size: 300%;
+    .carousel-text{
+        font-size: 3em;
+        text-shadow: 3px 3px 1px #120200;
     }
-
-    .banner p {
-        font-size: 150%;
-    }
-
     .tabla {
         padding: 10px;
         grid-template-columns: 1fr;
@@ -459,7 +416,7 @@ footer div div h2 {
 
     .formulario-de-contacto {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .barra {
@@ -475,6 +432,12 @@ footer div div h2 {
     }
 }
 
+@media screen and (max-width:767px){
+    .carousel-text{
+        font-size: 30px;
+        text-shadow: 3px 3px 1px #120200;
+    }
+}
 @media screen and (max-width:579px) {
     .buscador {
         text-align: center;
@@ -503,47 +466,20 @@ footer div div h2 {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
-            "nav"
+            "searcher"
             "main"
             "footer"
         ;
     }
-
-    nav ul {
-        margin: 10px;
-        flex-direction: column;
-    }
-
-    .banner {
-        height: 70vh;
-    }
-
-    .banner h2 {
-        font-size: 200%;
-    }
-
-    .banner p {
-        font-size: 100%;
-    }
-
     .libros p {
         font-size: 20px;
+    }
+    .boton-formulario{
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width:363px) {
-    .banner div {
-        width: 80%;
-    }
-
-    .banner h2 {
-        font-size: 150%;
-    }
-
-    .banner p {
-        font-size: 75%;
-    }
-
     .barra {
         width: 83%;
     }
@@ -556,18 +492,13 @@ footer div div h2 {
         flex-direction: column;
         justify-content: center;
     }
-    .banner {
-        height: 50vh;
-    }
     .contenedor__tarjeta {
         box-shadow: none;
     }
     .contenedor__tarjeta:hover {
         display: none;
     }
-    .libros p {
-        font-size: 20px;
-    }
+
     .main-contactos {
         line-height: 200%;
         flex-direction: column;
@@ -585,4 +516,8 @@ footer div div h2 {
         width: 40px;
         height: 40px;
     }
+    .redes-sociales h2{
+        display: none;
+    }
+;
 }
