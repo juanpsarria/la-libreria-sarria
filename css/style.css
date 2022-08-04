@@ -29,6 +29,7 @@ header{
 
 .navbar-brand{
     font-size: 2em;
+    font-weight: 600;
 }
 
 .navbar-brand:hover{
@@ -197,6 +198,7 @@ main {
 
 .tabla div p:nth-child(2) {
     text-align: justify;
+    text-indent: 5%
 }
 
 .tabla div img {
@@ -260,9 +262,12 @@ main {
 .historia,
 .mision,
 .vision {
-    text-align: justify;
     margin: 0px 20px 20px 20px;
     line-height: 200%;
+}
+
+.text-justify{
+    text-indent: 5%
 }
 
 
@@ -274,15 +279,10 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    line-height: 250%;
 }
 
 .formulario-de-contacto {
     text-align: center;
-}
-
-.barra {
-    width: 100%;
 }
 
 .boton-formulario{
@@ -298,7 +298,7 @@ main {
 }
 
 .telefonos-de-contacto {
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -320,8 +320,6 @@ footer {
     color: aliceblue;
     background-color: #120200;
     grid-area: footer;
-    align-items: center;
-    justify-content: center;
 }
 
 footer div {
@@ -341,12 +339,11 @@ footer div div nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-footer div div nav ul li a{
-    color: aliceblue;
+footer div div nav ul li a {
     text-decoration: none;
+    color: aliceblue;
     font-size: 15px;
     font-weight: 400;
     line-height: 150%;
@@ -357,23 +354,22 @@ footer div div nav ul li a:hover{
     text-decoration: underline;
 }
 
-footer div div h2 {
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
 .redes-sociales {
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+}
+
+.redes-sociales h2 {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .mapa {
+    padding: 5px;
     justify-content: center;
     align-items: center;
 }
@@ -409,24 +405,16 @@ footer div div h2 {
             "nueve"
             "diez";
     }
-
     .main-contactos {
         flex-direction: column;
     }
-
     .formulario-de-contacto {
         text-align: center;
         margin-bottom: 20px;
     }
-
-    .barra {
-        width: none;
-    }
-    
     .boton-formulario{
         width: none;
     }
-
     .telefonos-de-contacto {
         text-align: center;
     }
@@ -437,28 +425,6 @@ footer div div h2 {
         font-size: 30px;
         text-shadow: 3px 3px 1px #120200;
     }
-}
-@media screen and (max-width:579px) {
-    .buscador {
-        text-align: center;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-    }
-
-    .banner div {
-        width: 80%;
-    }
-
-    .banner h2 {
-        font-size: 250%;
-    }
-
-    .banner p {
-        font-size: 125%;
-    }
-
 }
 
 @media screen and (max-width:430px) {
@@ -479,23 +445,11 @@ footer div div h2 {
     }
 }
 
-@media screen and (max-width:363px) {
-    .barra {
-        width: 83%;
-    }
-
-}
-
 @media screen and (max-width:320px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .contenedor__tarjeta {
+    .card{
         box-shadow: none;
     }
-    .contenedor__tarjeta:hover {
+    .card:hover {
         display: none;
     }
 
@@ -506,18 +460,11 @@ footer div div h2 {
         align-items: center;
     }
     .formulario-de-contacto {
-        text-align: center;
         margin-bottom: 10px;
-    }
-    .telefonos-de-contacto {
-        text-align: center;
     }
     .boton-whatsapp img {
         width: 40px;
         height: 40px;
-    }
-    .redes-sociales h2{
-        display: none;
     }
 ;
 }

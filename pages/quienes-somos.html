@@ -6,35 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Librería</title>
     <link rel="shotcut icon" href="../img/logo.png" type="image/x-icon">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="../css/style.css">
+    <!--font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="grid-config">
         <header>
-            <!--inicio logo-->
-            <div class="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt="Volver a la página de inicio"></a>
-                <h1>La Librería</h1>
-            </div>
-            <!--inicio buscador-->
-            <div class="buscador">
-                <form>
-                    <label for="buscador">Buscador</label>
-                    <input type="search" name="buscador" id="">
-                </form>
-            </div>
-        </header>
-        <nav>
             <!--inicio navegador-->
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./libros.html">LIBROS</a></li>
-                <li><a href="./top-10.html">TOP 10</a></li>
-                <li><a href="./quienes-somos.html">QUIÉNES SOMOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../index.html">
+                        <img src="../img/logo.png" alt="Volver a la página de inicio" width="50" height="50" class="d-inline-block align-text-center">La Librería</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link text-white" href="./libros.html">LIBROS</a>
+                            <a class="nav-link text-white" href="./top-10.html">TOP 10</a>
+                            <a class="nav-link text-white" href="./quienes-somos.html">QUIÉNES SOMOS</a>
+                            <a class="nav-link text-white" href="./contacto.html">CONTACTO</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--fin navegador-->
+        </header>
+        <!--inicio buscador-->
+        <nav class="buscador navbar navbar-dark d-inline-block">
+                <div class="container-fluid justify-content-end">
+                <form class="d-flex just">
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
         </nav>
+        <!--fin buscador-->
         <main>
             <!--inicio página quiénes somos-->
             <section>
@@ -42,20 +54,20 @@
                 <!--inicio historia-->
                 <div class="historia">
                     <h3 class="historia__titulo">Historia de La Librería</h3>
-                    <p class="historia__parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem assumenda ab voluptate labore laudantium doloremque architecto sint dolorem eligendi ea reprehenderit molestias nisi recusandae, aliquam perferendis sit distinctio vitae.</p>
-                    <p class="historia__parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem assumenda ab voluptate labore laudantium doloremque architecto sint dolorem eligendi ea reprehenderit molestias nisi recusandae, aliquam perferendis sit distinctio vitae.</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem assumenda ab voluptate labore laudantium doloremque architecto sint dolorem eligendi ea reprehenderit molestias nisi recusandae, aliquam perferendis sit distinctio vitae.</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem assumenda ab voluptate labore laudantium doloremque architecto sint dolorem eligendi ea reprehenderit molestias nisi recusandae, aliquam perferendis sit distinctio vitae.</p>
                 </div>
                 <!--fin historia-->
                 <!--inicio misión-->
                 <div class="mision">
                     <h3 class="mision__titulo">Nuestra misión</h3>
-                    <p class="mision__parrafo-1">Contribuir al desarrollo cualitativo y a la extensión de la educación y la cultura en condiciones de equidad y con respeto a la diversidad en Argentina.</p>
+                    <p class="text-justify">Contribuir al desarrollo cualitativo y a la extensión de la educación y la cultura en condiciones de equidad y con respeto a la diversidad en Argentina.</p>
                 </div>
                 <!--fin misión-->
                 <!--inicio visión-->
                 <div class="vision">
                     <h3 class="vision__titulo">Nuestra visión</h3>
-                    <p class="vision__parrafo-1">Convertirnos es una institución de referencia para la promoción y mejora de la educación y la cultura en entornos variados y cambiantes.</p>
+                    <p class="text-justify">Convertirnos es una institución de referencia para la promoción y mejora de la educación y la cultura en entornos variados y cambiantes.</p>
                 </div>
                 <!--fin visión-->
             </section>
@@ -97,6 +109,8 @@
             </div>
         </footer>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
