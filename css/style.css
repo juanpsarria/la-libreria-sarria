@@ -1,475 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .grid-config {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        "header header header"
-        "searcher searcher searcher"
-        "main main main"
-        "footer footer footer"
-    ;
-}
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "searcher searcher searcher" "main main main" "footer footer footer"; }
 
-/*--HEADER--*/
-
-header{
-    color: aliceblue;
-    background-color: #120200;
-    grid-area: header;
-}
-
-.navbar-brand{
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.navbar-brand:hover{
-    text-decoration: underline;
-}
-
-.nav-link{
-    color: aliceblue;
-    font-size: 1.5em;
-}
-
-.nav-link:hover{
-    text-decoration: underline;
-}
-
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 210, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.buscador{
-    background-color: #120200;
-    grid-area: searcher;
-}
-
-.form-control{
-    width: 100%;
-}
-
-/*---MAIN---*/
-
-main {
-    grid-area: main;
-}
-
-/*---MAIN INDEX---*/
-
-/*---CAROUSEL---*/
-
-.carousel{
-    margin-bottom: 50px;
-}
-
-.carousel-text{
-    font-size: 5em;
-    text-shadow: 3px 3px 1px #120200;
-}
-
-/*---INICIO SECTION NUEVOS INGRESOS---*/
-
-.seccion__titulo {
-    font-size: 30px;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.card{
-    width: 250px;
-    height: 350px;
-    border: 1px solid whitesmoke;
-    font-size: 10px;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 10px;
-    box-shadow: 8px 10px 10px -8px #AF99AD;
-    transition: 1s;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card-img{
-    width: 140px;
-    height: 200px;
-    margin-top: 10px;
-}
-
-.card-title{
-    font-size: 1.6em;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.btn{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
-    background-color: #120200;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 1px white;
-}
-
-.btn:hover{
-    color: black;
-    font-weight: bold;
-    background-color: rgb(92, 138, 92);
-}
-
-/*-------FIN SECTION DE NUEVOS INGRESOS-------*/
-
-/*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
-
-/*-------FIN MAIN INDEX-------*/
-
-/*-------INICIO PAGINA LIBROS-------*/
-
-.libros {
+/*--INICIO HEADER--*/
+header {
+  color: white;
+  background-color: #120200;
+  grid-area: header; }
+  header .navbar-brand {
     font-size: 40px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+    font-weight: 600; }
+    header .navbar-brand:hover {
+      text-decoration: underline; }
+    header .navbar-brand img {
+      width: 60px;
+      height: 60px; }
+  header .navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white; }
+    header .navbar-dark .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  header .nav-link {
+    font-size: 20px; }
+    header .nav-link:hover {
+      text-decoration: underline; }
 
-.libros p {
+/*--FIN HEADER--*/
+/*--INICIO SEARCHER--*/
+.buscador {
+  background-color: #120200;
+  grid-area: searcher; }
+  .buscador .btn-outline-success {
+    color: white;
+    border-color: white; }
+
+/*--FIN SEARCHER--*/
+/*--INICIO MAIN INDEX--*/
+main {
+  grid-area: main; }
+  main .carousel {
+    margin-bottom: 50px; }
+    main .carousel .carousel-text {
+      font-size: 75px;
+      color: white;
+      text-shadow: 3px 3px 1px #120200; }
+  main .seccion__titulo {
     font-size: 30px;
-    font-style: italic;
-    text-align: center;
-}
-
-/*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
-
-/*-------FIN PAGINA LIBROS-------*/
-
-/*-------INICIO PÁGINA TOP 10-------*/
-
-.tabla {
-    padding: 20px;
-    width: 100%;
-    gap: 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 200px) (7, 200px);
-    grid-template-areas:
-        "uno dos"
-        "uno tres"
-        "cuatro cuatro"
-        "cinco cinco"
-        "seis seis"
-        "siete siete"
-        "ocho ocho"
-        "nueve nueve"
-        "diez diez"
-    ;
-}
-
-.tabla div {
-    border: dotted #120200;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: flex;
-}
-
-.tabla div p:first-child {
-    font-weight: bold;
-}
-
-.tabla div p:nth-child(2) {
-    text-align: justify;
-    text-indent: 5%
-}
-
-.tabla div img {
-    width: 140px;
-    height: 200px;
-}
-
-#uno {
-    grid-area: uno;
-    background-color: rgb(255, 234, 115);
-}
-
-#dos {
-    grid-area: dos;
-    background-color: silver;
-}
-
-#tres {
-    grid-area: tres;
-    background-color: rgb(205, 127, 50);
-}
-
-#cuatro {
-    grid-area: cuatro;
-}
-
-#cinco {
-    grid-area: cinco;
-}
-
-#seis {
-    grid-area: seis;
-}
-
-#siete {
-    grid-area: siete;
-}
-
-#ocho {
-    grid-area: ocho;
-}
-
-#nueve {
-    grid-area: nueve;
-}
-
-#diez {
-    grid-area: diez;
-}
-
-/*-----FIN PÁGINA TOP 10-----*/
-
-/*----INICIO PÁGINA QUIÉNES SOMOS----*/
-
-.quienes-somos__titulo {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.historia,
-.mision,
-.vision {
-    margin: 0px 20px 20px 20px;
-    line-height: 200%;
-}
-
-.text-justify{
-    text-indent: 5%
-}
-
-
-/*-------INICIO PAGINA CONTACTO-------*/
-/*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
-
-.main-contactos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.formulario-de-contacto {
-    text-align: center;
-}
-
-.boton-formulario{
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    background-color: #120200;
-    width: 30%;
-    border-radius: 5%;
-}
-
-#mensaje{
-    width: 100%;
-}
-
-.telefonos-de-contacto {
-    text-align: center;
-}
-
-
-/*-------FIN PAGINA CONTACTO-------*/
-
-
-/*-------BOTÓN WHATSAPP-------*/
-.boton-whatsapp img {
-    width: 80px;
-    height: 80px;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-}
-
-/*-------INICIO FOOTER-------*/
-
-footer {
-    color: aliceblue;
-    background-color: #120200;
-    grid-area: footer;
-}
-
-footer div {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-footer img {
-    width: 50px;
-    height: 50px;
-}
-
-footer div div nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer div div nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 150%;
-}
-
-footer div div nav ul li a:hover{
-    color: aliceblue;
     text-decoration: underline;
-}
-
-.redes-sociales {
-    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 20px; }
+  main .contenedor {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: start;
-}
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    main .contenedor .card {
+      width: 250px;
+      height: 350px;
+      border: 1px solid whitesmoke;
+      font-size: 10px;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 10px;
+      box-shadow: 8px 10px 10px -8px #AF99AD;
+      transition: 1s; }
+      main .contenedor .card:hover {
+        transform: scale(1.1); }
+      main .contenedor .card .card-img {
+        width: 140px;
+        height: 200px;
+        margin-top: 10px; }
+      main .contenedor .card .card-title {
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 20px; }
+      main .contenedor .card .btn {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        background-color: #120200;
+        padding: 5px;
+        border-radius: 5px; }
+        main .contenedor .card .btn:hover {
+          color: #120200;
+          font-weight: bold;
+          background-color: #5c8a5c; }
 
-.redes-sociales h2 {
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: 400;
-}
+.boton-whatsapp img {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px; }
 
-.mapa {
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-}
+/*--FIN MAIN INDEX--*/
+/*--INICIO FOOTER--*/
+footer {
+  color: white;
+  background-color: #120200;
+  grid-area: footer; }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    footer div div nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      footer div div nav ul a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%; }
+        footer div div nav ul a:hover {
+          color: white;
+          text-decoration: underline; }
+    footer div .redes-sociales {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start; }
+      footer div .redes-sociales h2 {
+        font-size: 15px;
+        font-weight: 400; }
+      footer div .redes-sociales div a img {
+        width: 50px;
+        height: 50px; }
+    footer div .mapa {
+      padding: 5px;
+      justify-content: center;
+      align-items: center; }
 
-/*-------FIN FOOTER-------*/
+/*--FIN FOOTER--*/
+/*--INICIO MEDIA QUERIES--*/
+@media screen and (max-width: 1024px) {
+  main .carousel .carousel-text {
+    font-size: 60px; }
+  .boton-whatsapp img {
+    width: 60px;
+    height: 60px; } }
 
-/*-------RESPONSIVE-------*/
+@media screen and (max-width: 888px) {
+  main .carousel .carousel-text {
+    font-size: 50px; } }
 
-@media screen and (max-width:1024px) {
-    .boton-whatsapp img {
-        width: 60px;
-        height: 60px;
-    }
-}
+@media screen and (max-width: 700px) {
+  main .carousel .carousel-text {
+    font-size: 30px; } }
 
-@media screen and (max-width:888px) {
-    .carousel-text{
-        font-size: 3em;
-        text-shadow: 3px 3px 1px #120200;
-    }
-    .tabla {
-        padding: 10px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "uno"
-            "dos"
-            "tres"
-            "cuatro"
-            "cinco"
-            "seis"
-            "siete"
-            "ocho"
-            "nueve"
-            "diez";
-    }
-    .main-contactos {
-        flex-direction: column;
-    }
-    .formulario-de-contacto {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .boton-formulario{
-        width: none;
-    }
-    .telefonos-de-contacto {
-        text-align: center;
-    }
-}
+@media screen and (max-width: 430px) {
+  main .contenedor .card {
+    box-shadow: none; }
+    main .contenedor .card:hover {
+      display: none; }
+  .boton-whatsapp img {
+    width: 40px;
+    height: 40px; } }
 
-@media screen and (max-width:767px){
-    .carousel-text{
-        font-size: 30px;
-        text-shadow: 3px 3px 1px #120200;
-    }
-}
-
-@media screen and (max-width:430px) {
-    .grid-config {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "searcher"
-            "main"
-            "footer"
-        ;
-    }
-    .libros p {
-        font-size: 20px;
-    }
-    .boton-formulario{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .card{
-        box-shadow: none;
-    }
-    .card:hover {
-        display: none;
-    }
-
-    .main-contactos {
-        line-height: 200%;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .formulario-de-contacto {
-        margin-bottom: 10px;
-    }
-    .boton-whatsapp img {
-        width: 40px;
-        height: 40px;
-    }
-;
-}
+@media screen and (max-width: 375px) {
+  main .carousel .carousel-text {
+    font-size: 25px; } }

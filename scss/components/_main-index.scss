@@ -1,0 +1,76 @@
+@import "../base/variables";
+
+/*--INICIO MAIN INDEX--*/
+
+main {
+    grid-area: main;
+    .carousel{
+        margin-bottom: 50px;
+        .carousel-text{
+            font-size: 75px;
+            color: $color-segundo;
+            text-shadow: 3px 3px 1px $color-primero;
+        }
+    }
+    .seccion__titulo{
+        font-size: 30px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .card{
+            width: 250px;
+            height: 350px;
+            border: 1px solid whitesmoke;
+            font-size: 10px;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 10px;
+            box-shadow: 8px 10px 10px -8px #AF99AD;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .card-img{
+                width: 140px;
+                height: 200px;
+                margin-top: 10px;
+            }
+            .card-title{
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .btn{
+                text-decoration: none;
+                color: $color-segundo;
+                font-size: 15px;
+                background-color: $color-primero;
+                padding: 5px;
+                border-radius: 5px;
+                &:hover{
+                    color: $color-primero;
+                    font-weight: bold;
+                    background-color: $color-tercero;
+                }
+            }
+        }
+    }
+}
+
+.boton-whatsapp img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+/*--FIN MAIN INDEX--*/

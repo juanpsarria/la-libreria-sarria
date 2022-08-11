@@ -1,0 +1,54 @@
+@import "../base/variables";
+
+/*--INICIO FOOTER--*/
+
+footer {
+    color: $color-segundo;
+    background-color: $color-primero;
+    grid-area: footer;
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color: $color-segundo;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 150%;
+                &:hover{
+                    color: $color-segundo;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .redes-sociales {
+            padding-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            h2 {
+                font-size: 15px;
+                font-weight: 400;
+            }
+            div a img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .mapa {
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/*--FIN FOOTER--*/

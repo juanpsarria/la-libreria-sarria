@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+.grid-config {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "searcher searcher searcher"
+        "main main main"
+        "footer footer footer"
+    ;
+}
