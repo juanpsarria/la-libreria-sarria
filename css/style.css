@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
 * {
   margin: 0;
@@ -11,11 +12,22 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "header header header" "searcher searcher searcher" "main main main" "footer footer footer"; }
 
+header {
+  grid-area: header; }
+
+.buscador {
+  grid-area: searcher; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
 /*--INICIO HEADER--*/
 header {
   color: white;
-  background-color: #120200;
-  grid-area: header; }
+  background-color: #120200; }
   header .navbar-brand {
     font-size: 40px;
     font-weight: 600; }
@@ -37,66 +49,239 @@ header {
 /*--FIN HEADER--*/
 /*--INICIO SEARCHER--*/
 .buscador {
-  background-color: #120200;
-  grid-area: searcher; }
+  background-color: #120200; }
   .buscador .btn-outline-success {
     color: white;
     border-color: white; }
 
 /*--FIN SEARCHER--*/
 /*--INICIO MAIN INDEX--*/
-main {
-  grid-area: main; }
-  main .carousel {
-    margin-bottom: 50px; }
-    main .carousel .carousel-text {
-      font-size: 75px;
-      color: white;
-      text-shadow: 3px 3px 1px #120200; }
-  main .seccion__titulo {
-    font-size: 30px;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 20px; }
-  main .contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    main .contenedor .card {
-      width: 250px;
-      height: 350px;
-      border: 1px solid whitesmoke;
-      font-size: 10px;
-      text-align: center;
-      align-items: center;
-      margin-bottom: 10px;
-      box-shadow: 8px 10px 10px -8px #AF99AD;
-      transition: 1s; }
-      main .contenedor .card:hover {
-        transform: scale(1.1); }
-      main .contenedor .card .card-img {
-        width: 140px;
-        height: 200px;
-        margin-top: 10px; }
-      main .contenedor .card .card-title {
-        font-size: 17px;
-        font-weight: 500;
-        margin-bottom: 20px; }
-      main .contenedor .card .btn {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        background-color: #120200;
-        padding: 5px;
-        border-radius: 5px; }
-        main .contenedor .card .btn:hover {
-          color: #120200;
-          font-weight: bold;
-          background-color: #5c8a5c; }
+main .carousel {
+  margin-bottom: 50px; }
+  main .carousel .carousel-text {
+    font-size: 75px;
+    color: white;
+    text-shadow: 3px 3px 1px #120200; }
 
+main .seccion__titulo {
+  color: #120200;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px; }
+
+main .contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
+  main .contenedor .card {
+    width: 250px;
+    height: 350px;
+    border: 1px solid whitesmoke;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 8px 10px 10px -8px #AF99AD;
+    transition: 1s; }
+    main .contenedor .card:hover {
+      transform: scale(1.1); }
+    main .contenedor .card .card-img {
+      width: 140px;
+      height: 200px;
+      margin-top: 10px; }
+    main .contenedor .card .card-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 20px; }
+    main .contenedor .card .btn {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      background-color: #120200;
+      padding: 5px;
+      border-radius: 5px; }
+      main .contenedor .card .btn:hover {
+        color: #120200;
+        font-weight: bold;
+        background-color: #5c8a5c; }
+
+/*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
+/*--FIN MAIN INDEX--*/
+/*-------INICIO PAGINA LIBROS-------*/
+.libros {
+  color: #120200;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .libros p {
+    font-size: 30px;
+    font-style: italic; }
+
+/*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
+/*-------FIN PAGINA LIBROS-------*/
+/*-------INICIO PÁGINA TOP 10-------*/
+.top-10 {
+  color: #120200;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .top-10 p {
+    font-size: 30px;
+    font-style: italic; }
+
+.tabla {
+  padding: 20px;
+  width: 100%;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 200px) 7, 200px;
+  grid-template-areas: "uno dos" "uno tres" "cuatro cuatro" "cinco cinco" "seis seis" "siete siete" "ocho ocho" "nueve nueve" "diez diez"; }
+  .tabla div {
+    border: dotted #120200;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: flex; }
+    .tabla div p {
+      color: #120200;
+      font-size: 15px; }
+      .tabla div p:first-child {
+        font-weight: bold; }
+      .tabla div p:nth-child(2) {
+        text-align: justify;
+        text-indent: 5%; }
+    .tabla div img {
+      width: 210px;
+      height: 300px; }
+  .tabla #uno {
+    grid-area: uno;
+    background-color: #ffea73; }
+  .tabla #dos {
+    grid-area: dos;
+    background-color: silver; }
+  .tabla #tres {
+    grid-area: tres;
+    background-color: #cd7f32; }
+  .tabla #cuatro {
+    grid-area: cuatro; }
+  .tabla #cinco {
+    grid-area: cinco; }
+  .tabla #seis {
+    grid-area: seis; }
+  .tabla #siete {
+    grid-area: siete; }
+  .tabla #ocho {
+    grid-area: ocho; }
+  .tabla #nueve {
+    grid-area: nueve; }
+  .tabla #diez {
+    grid-area: diez; }
+
+/*-----FIN PÁGINA TOP 10-----*/
+/*----INICIO PÁGINA QUIÉNES SOMOS----*/
+.quienes-somos {
+  color: #120200;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.historia__titulo {
+  color: #120200;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.historia p {
+  color: #120200;
+  font-size: 15px;
+  text-align: justify;
+  text-indent: 3%; }
+
+.mision__titulo {
+  color: #120200;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.mision p {
+  color: #120200;
+  font-size: 15px;
+  text-align: justify;
+  text-indent: 3%; }
+
+.vision__titulo {
+  color: #120200;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.vision p {
+  color: #120200;
+  font-size: 15px;
+  text-align: justify;
+  text-indent: 3%; }
+
+/*-----FIN PAGINA QUIENES SOMOS-----*/
+/*-------INICIO PAGINA CONTACTO-------*/
+/*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
+.main-contactos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px; }
+  .main-contactos .formulario-de-contacto {
+    text-align: center; }
+    .main-contactos .formulario-de-contacto h3 {
+      color: #120200;
+      font-size: 30px;
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 20px; }
+    .main-contactos .formulario-de-contacto .mb-3 .informacion {
+      color: #120200;
+      font-size: 15px; }
+    .main-contactos .formulario-de-contacto .mb-3 .form-control {
+      border-color: #120200; }
+    .main-contactos .formulario-de-contacto .boton-formulario {
+      color: white;
+      background-color: #120200;
+      width: 30%;
+      border-radius: 5%; }
+    .main-contactos .formulario-de-contacto #mensaje {
+      font-size: 15px;
+      border-color: #120200;
+      border-radius: 2%;
+      width: 100%; }
+    .main-contactos .formulario-de-contacto .acepta {
+      color: #120200;
+      font-size: 15px; }
+  .main-contactos .telefonos-de-contacto {
+    text-align: center; }
+    .main-contactos .telefonos-de-contacto h3 {
+      color: #120200;
+      font-size: 30px;
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 20px; }
+    .main-contactos .telefonos-de-contacto p {
+      color: #120200;
+      font-size: 15px; }
+
+/*-------FIN PAGINA CONTACTO-------*/
 .boton-whatsapp img {
   width: 80px;
   height: 80px;
@@ -104,12 +289,10 @@ main {
   bottom: 50px;
   right: 20px; }
 
-/*--FIN MAIN INDEX--*/
 /*--INICIO FOOTER--*/
 footer {
   color: white;
-  background-color: #120200;
-  grid-area: footer; }
+  background-color: #120200; }
   footer div {
     display: flex;
     justify-content: space-around;

@@ -1,0 +1,64 @@
+@import "../base/variables";
+
+/*-------INICIO PAGINA CONTACTO-------*/
+/*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
+
+.main-contactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    .formulario-de-contacto {
+        text-align: center;
+        h3{
+            color: $color-primero;
+            font-size: 30px;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .mb-3{
+            .informacion{
+            color: $color-primero;
+            font-size: 15px;
+            }
+            .form-control{
+                border-color: $color-primero;
+            }
+        }
+        .boton-formulario{
+            color: $color-segundo;
+            background-color: $color-primero;
+            width: 30%;
+            border-radius: 5%;
+        }
+        #mensaje{
+            font-size: 15px;
+            border-color: $color-primero;
+            border-radius: 2%;
+            width: 100%
+        }
+        .acepta{
+            color: $color-primero;
+            font-size: 15px;
+        }
+    }
+    .telefonos-de-contacto {
+        text-align: center;
+        h3{
+            color: $color-primero;
+            font-size: 30px;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $color-primero;
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+/*-------FIN PAGINA CONTACTO-------*/

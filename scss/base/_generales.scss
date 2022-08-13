@@ -18,3 +18,19 @@
         "footer footer footer"
     ;
 }
+
+header{
+    grid-area: header;
+}
+
+.buscador{
+    grid-area: searcher;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}

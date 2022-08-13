@@ -1,0 +1,95 @@
+@import "../base/variables";
+
+/*-------INICIO PÁGINA TOP 10-------*/
+
+.top-10 {
+    color: $color-primero;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    p {
+        font-size: 30px;
+        font-style: italic;
+    }
+}
+
+.tabla {
+    padding: 20px;
+    width: 100%;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px) (7, 200px);
+    grid-template-areas:
+        "uno dos"
+        "uno tres"
+        "cuatro cuatro"
+        "cinco cinco"
+        "seis seis"
+        "siete siete"
+        "ocho ocho"
+        "nueve nueve"
+        "diez diez"
+    ;
+    div {
+        border: dotted $color-primero;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: flex;
+        p{
+            color: $color-primero;
+            font-size: 15px;
+            &:first-child {
+                font-weight: bold;
+            }
+            &:nth-child(2) {
+                text-align: justify;
+                text-indent: 5%
+            }
+        }
+        img {
+            width: 210px;
+            height: 300px;
+        }
+    }
+    #uno {
+        grid-area: uno;
+        background-color: rgb(255, 234, 115);
+    }    
+    #dos {
+        grid-area: dos;
+        background-color: silver;
+    }    
+    #tres {
+        grid-area: tres;
+        background-color: rgb(205, 127, 50);
+    }    
+    #cuatro {
+        grid-area: cuatro;
+    }    
+    #cinco {
+        grid-area: cinco;
+    }    
+    #seis {
+        grid-area: seis;
+    }    
+    #siete {
+        grid-area: siete;
+    }    
+    #ocho {
+        grid-area: ocho;
+    }    
+    #nueve {
+        grid-area: nueve;
+    }    
+    #diez {
+        grid-area: diez;
+    }
+}
+
+/*-----FIN PÁGINA TOP 10-----*/

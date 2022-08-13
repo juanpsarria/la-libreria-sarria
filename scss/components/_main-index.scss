@@ -3,7 +3,6 @@
 /*--INICIO MAIN INDEX--*/
 
 main {
-    grid-area: main;
     .carousel{
         margin-bottom: 50px;
         .carousel-text{
@@ -13,6 +12,7 @@ main {
         }
     }
     .seccion__titulo{
+        color: $color-primero;
         font-size: 30px;
         text-decoration: underline;
         text-align: center;
@@ -65,12 +65,6 @@ main {
     }
 }
 
-.boton-whatsapp img {
-    width: 80px;
-    height: 80px;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-}
+/*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
 
 /*--FIN MAIN INDEX--*/
