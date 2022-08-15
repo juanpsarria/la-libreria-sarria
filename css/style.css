@@ -114,10 +114,11 @@ main .contenedor {
 /*-------INICIO PAGINA LIBROS-------*/
 .libros {
   color: #120200;
-  font-size: 40px;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 20px; }
+  padding: 10px; }
+  .libros h2 {
+    font-size: 40px;
+    margin-bottom: 20px; }
   .libros p {
     font-size: 30px;
     font-style: italic; }
@@ -127,10 +128,11 @@ main .contenedor {
 /*-------INICIO PÁGINA TOP 10-------*/
 .top-10 {
   color: #120200;
-  font-size: 40px;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 20px; }
+  padding: 10px; }
+  .top-10 h2 {
+    font-size: 40px;
+    margin-bottom: 20px; }
   .top-10 p {
     font-size: 30px;
     font-style: italic; }
@@ -190,50 +192,54 @@ main .contenedor {
 /*-----FIN PÁGINA TOP 10-----*/
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 .quienes-somos {
-  color: #120200;
-  font-size: 40px;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 20px; }
+  padding: 10px; }
+  .quienes-somos h2 {
+    color: #120200;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px; }
 
-.historia__titulo {
-  color: #120200;
-  font-size: 30px;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 20px; }
+.historia {
+  padding: 20px; }
+  .historia__titulo {
+    color: #120200;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px; }
+  .historia p {
+    color: #120200;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 3%; }
 
-.historia p {
-  color: #120200;
-  font-size: 15px;
-  text-align: justify;
-  text-indent: 3%; }
+.mision {
+  padding: 20px; }
+  .mision__titulo {
+    color: #120200;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px; }
+  .mision p {
+    color: #120200;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 3%; }
 
-.mision__titulo {
-  color: #120200;
-  font-size: 30px;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 20px; }
-
-.mision p {
-  color: #120200;
-  font-size: 15px;
-  text-align: justify;
-  text-indent: 3%; }
-
-.vision__titulo {
-  color: #120200;
-  font-size: 30px;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 20px; }
-
-.vision p {
-  color: #120200;
-  font-size: 15px;
-  text-align: justify;
-  text-indent: 3%; }
+.vision {
+  padding: 20px; }
+  .vision__titulo {
+    color: #120200;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px; }
+  .vision p {
+    color: #120200;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 3%; }
 
 /*-----FIN PAGINA QUIENES SOMOS-----*/
 /*-------INICIO PAGINA CONTACTO-------*/
@@ -244,7 +250,8 @@ main .contenedor {
   justify-content: space-evenly;
   padding: 20px; }
   .main-contactos .formulario-de-contacto {
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
     .main-contactos .formulario-de-contacto h3 {
       color: #120200;
       font-size: 30px;
@@ -259,6 +266,7 @@ main .contenedor {
     .main-contactos .formulario-de-contacto .boton-formulario {
       color: white;
       background-color: #120200;
+      font-size: 15px;
       width: 30%;
       border-radius: 5%; }
     .main-contactos .formulario-de-contacto #mensaje {
@@ -270,7 +278,8 @@ main .contenedor {
       color: #120200;
       font-size: 15px; }
   .main-contactos .telefonos-de-contacto {
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
     .main-contactos .telefonos-de-contacto h3 {
       color: #120200;
       font-size: 30px;
@@ -336,7 +345,15 @@ footer {
     font-size: 60px; }
   .boton-whatsapp img {
     width: 60px;
-    height: 60px; } }
+    height: 60px; }
+  .tabla {
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve" "diez"; } }
+
+@media screen and (max-width: 918px) {
+  .main-contactos {
+    flex-direction: column; } }
 
 @media screen and (max-width: 888px) {
   main .carousel .carousel-text {
@@ -346,7 +363,34 @@ footer {
   main .carousel .carousel-text {
     font-size: 30px; } }
 
+@media screen and (max-width: 492px) {
+  .libros h2 {
+    font-size: 30px; }
+  .libros p {
+    font-size: 20px; }
+  .top-10 h2 {
+    font-size: 30px; }
+  .top-10 p {
+    font-size: 20px; }
+  .quienes-somos h2 {
+    font-size: 30px; }
+  .historia__titulo {
+    font-size: 20px; }
+  .mision__titulo {
+    font-size: 20px; }
+  .vision__titulo {
+    font-size: 20px; }
+  .main-contactos .formulario-de-contacto h3 {
+    font-size: 20px; }
+  .main-contactos .formulario-de-contacto .boton-formulario {
+    width: 40%; }
+  .main-contactos .telefonos-de-contacto h3 {
+    font-size: 20px; } }
+
 @media screen and (max-width: 430px) {
+  .grid-config {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "searcher" "main" "footer"; }
   main .contenedor .card {
     box-shadow: none; }
     main .contenedor .card:hover {

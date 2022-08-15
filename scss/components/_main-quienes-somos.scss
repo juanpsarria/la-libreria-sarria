@@ -3,14 +3,18 @@
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 
 .quienes-somos{
-    color: $color-primero;
-    font-size: 40px;
-    text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
+    h2{
+        color: $color-primero;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
 }
 
 .historia {
+    padding: 20px;
     &__titulo{
         color: $color-primero;
         font-size: 30px;
@@ -27,6 +31,7 @@
 }
 
 .mision{
+    padding: 20px;
     &__titulo{
         color: $color-primero;
         font-size: 30px;
@@ -43,6 +48,7 @@
 }
 
 .vision {
+    padding: 20px;
     &__titulo{
         color: $color-primero;
         font-size: 30px;

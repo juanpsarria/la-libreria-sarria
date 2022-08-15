@@ -4,10 +4,12 @@
 
 .libros {
     color: $color-primero;
-    font-size: 40px;
     text-align: center;
     padding: 10px;
-    margin-bottom: 20px;
+    h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
     p {
         font-size: 30px;
         font-style: italic;
