@@ -1,64 +1,65 @@
 @import "../base/variables";
+@import "../base/maps";
 
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 
 .quienes-somos{
-    padding: 10px;
+    margin: 10px;
     h2{
-        color: $color-primero;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 20px;
+        color: map-get($titulo, color);
+        font-size: map-get($titulo, font-size);
+        text-align: map-get($titulo, text-align);
+        margin-bottom: map-get($titulo, margin);
     }
     
 }
 
 .historia {
-    padding: 20px;
+    margin: 20px;
     &__titulo{
         color: $color-primero;
-        font-size: 30px;
+        font-size: $size-tercero;
         text-decoration: underline;
         text-align: center;
         margin-bottom: 20px;
     }
     p{
         color: $color-primero;
-        font-size: 15px;
+        font-size: $size-quinto;
         text-align: justify;
         text-indent: 3%
     }
 }
 
 .mision{
-    padding: 20px;
+    margin: 20px;
     &__titulo{
         color: $color-primero;
-        font-size: 30px;
+        font-size: $size-tercero;
         text-decoration: underline;
         text-align: center;
         margin-bottom: 20px;
     }
     p{
         color: $color-primero;
-        font-size: 15px;
+        font-size: $size-quinto;
         text-align: justify;
         text-indent: 3%
     }
 }
 
 .vision {
-    padding: 20px;
+    margin: 20px;
     &__titulo{
         color: $color-primero;
-        font-size: 30px;
+        font-size: $size-tercero;
         text-decoration: underline;
         text-align: center;
         margin-bottom: 20px;
     }
     p{
         color: $color-primero;
-        font-size: 15px;
+        font-size: $size-quinto;
         text-align: justify;
         text-indent: 3%
     }

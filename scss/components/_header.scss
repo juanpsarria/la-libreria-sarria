@@ -6,7 +6,7 @@ header{
     color: $color-segundo;
     background-color: $color-primero;
     .navbar-brand{
-        font-size: 40px;
+        font-size: $size-segundo;
         font-weight: 600;
         &:hover{
         text-decoration: underline;
@@ -24,7 +24,7 @@ header{
         }
     }
     .nav-link{
-        font-size: 20px;
+        font-size: $size-cuarto;
         &:hover{
             text-decoration: underline;
         }

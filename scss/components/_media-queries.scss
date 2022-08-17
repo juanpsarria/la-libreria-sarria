@@ -39,44 +39,44 @@
 
 @media screen and (max-width:700px) {
     main .carousel .carousel-text{
-        font-size: 30px;
+        font-size: $size-tercero;
     }
 }
 
 @media screen and (max-width:492px){
     .libros {
         h2{
-            font-size: 30px;
+            font-size: $size-tercero;
         }
         p{
-            font-size: 20px;
+            font-size: $size-cuarto;
         }
     }
         
     .top-10{
         h2{
-            font-size: 30px;
+            font-size: $size-tercero;
         }
         p{
-            font-size: 20px;
+            font-size: $size-cuarto;
         }
     }
     .quienes-somos h2{
-        font-size: 30px;
+        font-size: $size-tercero;
     }
     .historia__titulo{
-        font-size: 20px;
+        font-size: $size-cuarto;
     }
     .mision__titulo{
-        font-size: 20px;
+        font-size: $size-cuarto;
     }
     .vision__titulo{
-        font-size: 20px;
+        font-size: $size-cuarto;
     }
     .main-contactos{
         .formulario-de-contacto{
             h3{
-                font-size: 20px;
+                font-size: $size-cuarto;
             }
             .boton-formulario{
                 width: 40%;
@@ -84,7 +84,7 @@
         }
         .telefonos-de-contacto{
             h3{
-                font-size: 20px;
+                font-size: $size-cuarto;
             }
         }
     }

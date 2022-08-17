@@ -64,8 +64,8 @@ main .carousel {
     text-shadow: 3px 3px 1px #120200; }
 
 main .seccion__titulo {
-  color: #120200;
   font-size: 30px;
+  color: #120200;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 20px; }
@@ -81,7 +81,6 @@ main .contenedor {
     width: 250px;
     height: 350px;
     border: 1px solid whitesmoke;
-    font-size: 10px;
     text-align: center;
     align-items: center;
     margin-bottom: 10px;
@@ -94,7 +93,7 @@ main .contenedor {
       height: 200px;
       margin-top: 10px; }
     main .contenedor .card .card-title {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 500;
       margin-bottom: 20px; }
     main .contenedor .card .btn {
@@ -111,11 +110,12 @@ main .contenedor {
 
 /*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
 /*--FIN MAIN INDEX--*/
+/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
 /*-------INICIO PAGINA LIBROS-------*/
 .libros {
   color: #120200;
   text-align: center;
-  padding: 10px; }
+  margin: 10px; }
   .libros h2 {
     font-size: 40px;
     margin-bottom: 20px; }
@@ -125,11 +125,12 @@ main .contenedor {
 
 /*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
 /*-------FIN PAGINA LIBROS-------*/
+/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
 /*-------INICIO PÁGINA TOP 10-------*/
 .top-10 {
   color: #120200;
   text-align: center;
-  padding: 10px; }
+  margin: 10px; }
   .top-10 h2 {
     font-size: 40px;
     margin-bottom: 20px; }
@@ -190,9 +191,10 @@ main .contenedor {
     grid-area: diez; }
 
 /*-----FIN PÁGINA TOP 10-----*/
+/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 .quienes-somos {
-  padding: 10px; }
+  margin: 10px; }
   .quienes-somos h2 {
     color: #120200;
     font-size: 40px;
@@ -200,7 +202,7 @@ main .contenedor {
     margin-bottom: 20px; }
 
 .historia {
-  padding: 20px; }
+  margin: 20px; }
   .historia__titulo {
     color: #120200;
     font-size: 30px;
@@ -214,7 +216,7 @@ main .contenedor {
     text-indent: 3%; }
 
 .mision {
-  padding: 20px; }
+  margin: 20px; }
   .mision__titulo {
     color: #120200;
     font-size: 30px;
@@ -228,7 +230,7 @@ main .contenedor {
     text-indent: 3%; }
 
 .vision {
-  padding: 20px; }
+  margin: 20px; }
   .vision__titulo {
     color: #120200;
     font-size: 30px;
@@ -245,50 +247,37 @@ main .contenedor {
 /*-------INICIO PAGINA CONTACTO-------*/
 /*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
 .main-contactos {
+  font-size: 15px;
+  color: #120200;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 20px; }
+  margin: 10px; }
   .main-contactos .formulario-de-contacto {
     text-align: center;
     padding: 20px; }
     .main-contactos .formulario-de-contacto h3 {
-      color: #120200;
       font-size: 30px;
       text-decoration: underline;
-      text-align: center;
       margin-bottom: 20px; }
-    .main-contactos .formulario-de-contacto .mb-3 .informacion {
-      color: #120200;
-      font-size: 15px; }
     .main-contactos .formulario-de-contacto .mb-3 .form-control {
       border-color: #120200; }
     .main-contactos .formulario-de-contacto .boton-formulario {
       color: white;
       background-color: #120200;
-      font-size: 15px;
       width: 30%;
       border-radius: 5%; }
     .main-contactos .formulario-de-contacto #mensaje {
-      font-size: 15px;
       border-color: #120200;
       border-radius: 2%;
       width: 100%; }
-    .main-contactos .formulario-de-contacto .acepta {
-      color: #120200;
-      font-size: 15px; }
   .main-contactos .telefonos-de-contacto {
     text-align: center;
     padding: 20px; }
     .main-contactos .telefonos-de-contacto h3 {
-      color: #120200;
       font-size: 30px;
       text-decoration: underline;
-      text-align: center;
       margin-bottom: 20px; }
-    .main-contactos .telefonos-de-contacto p {
-      color: #120200;
-      font-size: 15px; }
 
 /*-------FIN PAGINA CONTACTO-------*/
 .boton-whatsapp img {

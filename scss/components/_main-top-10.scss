@@ -1,17 +1,18 @@
 @import "../base/variables";
+@import "../base/maps";
 
 /*-------INICIO PÁGINA TOP 10-------*/
 
 .top-10 {
-    color: $color-primero;
-    text-align: center;
-    padding: 10px;
+    color: map-get($titulo, color);
+    text-align: map-get($titulo, text-align);
+    margin: 10px;
     h2{
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: map-get($titulo, font-size);
+        margin-bottom: map-get($titulo, margin);
     }
     p {
-        font-size: 30px;
+        font-size: $size-tercero;
         font-style: italic;
     }
 }
@@ -45,7 +46,7 @@
         flex-wrap: flex;
         p{
             color: $color-primero;
-            font-size: 15px;
+            font-size: $size-quinto;
             &:first-child {
                 font-weight: bold;
             }
