@@ -30,6 +30,8 @@ footer {
 header {
   color: white;
   background-color: #120200; }
+  header h1 {
+    display: none; }
   header .navbar-brand {
     font-size: 40px;
     font-weight: 600; }
