@@ -1,5 +1,6 @@
 @import "../base/variables";
 @import "../base/maps";
+@import "../base/mixins";
 
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 
@@ -17,16 +18,12 @@
 .historia {
     margin: 20px;
     &__titulo{
-        color: $color-primero;
-        font-size: $size-tercero;
+        @include text ($color-primero, $size-tercero, center);
         text-decoration: underline;
-        text-align: center;
         margin-bottom: 20px;
     }
     p{
-        color: $color-primero;
-        font-size: $size-quinto;
-        text-align: justify;
+        @include text ($color-primero, $size-quinto, justify);
         text-indent: 3%
     }
 }
@@ -34,16 +31,12 @@
 .mision{
     margin: 20px;
     &__titulo{
-        color: $color-primero;
-        font-size: $size-tercero;
+        @include text ($color-primero, $size-tercero, center);
         text-decoration: underline;
-        text-align: center;
         margin-bottom: 20px;
     }
     p{
-        color: $color-primero;
-        font-size: $size-quinto;
-        text-align: justify;
+        @include text ($color-primero, $size-quinto, justify);
         text-indent: 3%
     }
 }
@@ -51,16 +44,12 @@
 .vision {
     margin: 20px;
     &__titulo{
-        color: $color-primero;
-        font-size: $size-tercero;
+        @include text ($color-primero, $size-tercero, center);
         text-decoration: underline;
-        text-align: center;
         margin-bottom: 20px;
     }
     p{
-        color: $color-primero;
-        font-size: $size-quinto;
-        text-align: justify;
+        @include text ($color-primero, $size-quinto, justify);
         text-indent: 3%
     }
 }

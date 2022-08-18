@@ -1,0 +1,7 @@
+/*--MIXIN USADO EN _MAIN-QUIENES-SOMOS--*/
+
+@mixin text ($color, $size, $align) {
+    color: $color;
+    font-size: $size;
+    text-align: $align;
+}

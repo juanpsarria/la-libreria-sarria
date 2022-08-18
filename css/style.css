@@ -24,6 +24,8 @@ main {
 footer {
   grid-area: footer; }
 
+/*--COLOR--*/
+/*--FONT SIZE--*/
 /*--INICIO HEADER--*/
 header {
   color: white;
@@ -47,14 +49,31 @@ header {
       text-decoration: underline; }
 
 /*--FIN HEADER--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
 /*--INICIO SEARCHER--*/
 .buscador {
   background-color: #120200; }
-  .buscador .btn-outline-success {
+  .buscador .btn {
     color: white;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color; }
+    .buscador .btn:hover {
+      background-color: #5c8a5c; }
+  .buscador .btn-outline-success {
     border-color: white; }
 
 /*--FIN SEARCHER--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--EXTEND USADO EN _MAIN-INDEX Y _FOOTER--*/
+main .contenedor, footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 /*--INICIO MAIN INDEX--*/
 main .carousel {
   margin-bottom: 50px; }
@@ -72,9 +91,6 @@ main .seccion__titulo {
 
 main .contenedor {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px; }
   main .contenedor .card {
@@ -110,7 +126,11 @@ main .contenedor {
 
 /*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
 /*--FIN MAIN INDEX--*/
-/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
 /*-------INICIO PAGINA LIBROS-------*/
 .libros {
   color: #120200;
@@ -125,7 +145,11 @@ main .contenedor {
 
 /*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
 /*-------FIN PAGINA LIBROS-------*/
-/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
 /*-------INICIO PÁGINA TOP 10-------*/
 .top-10 {
   color: #120200;
@@ -151,13 +175,13 @@ main .contenedor {
     padding: 5px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: flex; }
     .tabla div p {
       color: #120200;
-      font-size: 15px; }
+      font-size: 15px;
+      text-align: center; }
       .tabla div p:first-child {
         font-weight: bold; }
       .tabla div p:nth-child(2) {
@@ -191,7 +215,12 @@ main .contenedor {
     grid-area: diez; }
 
 /*-----FIN PÁGINA TOP 10-----*/
-/*--MAP USADO EN _MAIN-QUIENES-SOMOS--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
+/*--MIXIN USADO EN _MAIN-QUIENES-SOMOS--*/
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
 .quienes-somos {
   margin: 10px; }
@@ -206,8 +235,8 @@ main .contenedor {
   .historia__titulo {
     color: #120200;
     font-size: 30px;
-    text-decoration: underline;
     text-align: center;
+    text-decoration: underline;
     margin-bottom: 20px; }
   .historia p {
     color: #120200;
@@ -220,8 +249,8 @@ main .contenedor {
   .mision__titulo {
     color: #120200;
     font-size: 30px;
-    text-decoration: underline;
     text-align: center;
+    text-decoration: underline;
     margin-bottom: 20px; }
   .mision p {
     color: #120200;
@@ -234,8 +263,8 @@ main .contenedor {
   .vision__titulo {
     color: #120200;
     font-size: 30px;
-    text-decoration: underline;
     text-align: center;
+    text-decoration: underline;
     margin-bottom: 20px; }
   .vision p {
     color: #120200;
@@ -244,14 +273,16 @@ main .contenedor {
     text-indent: 3%; }
 
 /*-----FIN PAGINA QUIENES SOMOS-----*/
+/*--COLOR--*/
+/*--FONT SIZE--*/
 /*-------INICIO PAGINA CONTACTO-------*/
 /*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
 .main-contactos {
   font-size: 15px;
   color: #120200;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 10px; }
   .main-contactos .formulario-de-contacto {
     text-align: center;
@@ -287,19 +318,24 @@ main .contenedor {
   bottom: 50px;
   right: 20px; }
 
+/*--COLOR--*/
+/*--FONT SIZE--*/
+/*--EXTEND USADO EN _MAIN-INDEX Y _FOOTER--*/
+main .contenedor, footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 /*--INICIO FOOTER--*/
 footer {
   color: white;
   background-color: #120200; }
   footer div {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap; }
     footer div div nav ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center; }
       footer div div nav ul a {
         text-decoration: none;

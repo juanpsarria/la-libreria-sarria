@@ -40,13 +40,13 @@
         padding: 5px;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: flex;
         p{
             color: $color-primero;
             font-size: $size-quinto;
+            text-align: center;
             &:first-child {
                 font-weight: bold;
             }
