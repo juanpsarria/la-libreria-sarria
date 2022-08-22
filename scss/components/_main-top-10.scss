@@ -60,37 +60,39 @@
             height: 300px;
         }
     }
-    #uno {
+    @each $name, $value in $bg-color {
+        .#{$name} {
+            background-color: $value;
+        }
+    }
+    .uno {
         grid-area: uno;
-        background-color: rgb(255, 234, 115);
     }    
-    #dos {
+    .dos {
         grid-area: dos;
-        background-color: silver;
     }    
-    #tres {
+    .tres {
         grid-area: tres;
-        background-color: rgb(205, 127, 50);
     }    
-    #cuatro {
+    .cuatro {
         grid-area: cuatro;
     }    
-    #cinco {
+    .cinco {
         grid-area: cinco;
     }    
-    #seis {
+    .seis {
         grid-area: seis;
     }    
-    #siete {
+    .siete {
         grid-area: siete;
     }    
-    #ocho {
+    .ocho {
         grid-area: ocho;
     }    
-    #nueve {
+    .nueve {
         grid-area: nueve;
     }    
-    #diez {
+    .diez {
         grid-area: diez;
     }
 }

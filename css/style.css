@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*--CONFIGURACIÓN FRAMEWORK--*/
 .grid-config {
   width: 100%;
   font-family: 'Poppins', sans-serif;
@@ -24,8 +25,6 @@ main {
 footer {
   grid-area: footer; }
 
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--INICIO HEADER--*/
 header {
   color: white;
@@ -33,7 +32,7 @@ header {
   header h1 {
     display: none; }
   header .navbar-brand {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600; }
     header .navbar-brand:hover {
       text-decoration: underline; }
@@ -46,19 +45,17 @@ header {
     header .navbar-dark .navbar-toggler .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   header .nav-link {
-    font-size: 20px; }
+    font-size: 1.25rem; }
     header .nav-link:hover {
       text-decoration: underline; }
 
 /*--FIN HEADER--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--INICIO SEARCHER--*/
 .buscador {
   background-color: #120200; }
   .buscador .btn {
     color: white;
-    font-size: 15px;
+    font-size: 0.93rem;
     padding: 5px;
     border-radius: 5px;
     transition: background-color; }
@@ -68,8 +65,6 @@ header {
     border-color: white; }
 
 /*--FIN SEARCHER--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--EXTEND USADO EN _MAIN-INDEX Y _FOOTER--*/
 main .contenedor, footer div {
   display: flex;
@@ -80,12 +75,12 @@ main .contenedor, footer div {
 main .carousel {
   margin-bottom: 50px; }
   main .carousel .carousel-text {
-    font-size: 75px;
+    font-size: 4.6rem;
     color: white;
     text-shadow: 3px 3px 1px #120200; }
 
 main .seccion__titulo {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #120200;
   text-decoration: underline;
   text-align: center;
@@ -96,8 +91,8 @@ main .contenedor {
   flex-wrap: wrap;
   margin-bottom: 50px; }
   main .contenedor .card {
-    width: 250px;
-    height: 350px;
+    width: 15.625rem;
+    height: 21.875rem;
     border: 1px solid whitesmoke;
     text-align: center;
     align-items: center;
@@ -107,17 +102,17 @@ main .contenedor {
     main .contenedor .card:hover {
       transform: scale(1.1); }
     main .contenedor .card .card-img {
-      width: 140px;
-      height: 200px;
+      width: 8.75rem;
+      height: 12.5rem;
       margin-top: 10px; }
     main .contenedor .card .card-title {
-      font-size: 15px;
+      font-size: 0.93rem;
       font-weight: 500;
       margin-bottom: 20px; }
     main .contenedor .card .btn {
       text-decoration: none;
       color: white;
-      font-size: 15px;
+      font-size: 0.93rem;
       background-color: #120200;
       padding: 5px;
       border-radius: 5px; }
@@ -128,10 +123,6 @@ main .contenedor {
 
 /*-------LAS DESMÁS SECCIONES DE LIBROS COMPARTIRÁN ESTAS MISMAS CONFIGURACIONES UTILIZANDO LAS MISMAS "CLASSES" PARA LOGRAR UNIFORMIDAD-------*/
 /*--FIN MAIN INDEX--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
 /*-------INICIO PAGINA LIBROS-------*/
 .libros {
@@ -139,18 +130,14 @@ main .contenedor {
   text-align: center;
   margin: 10px; }
   .libros h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 20px; }
   .libros p {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-style: italic; }
 
 /*--LAS SECCIONES DE LIBROS COMPARTEN LAS "CLASSES" CONFIGURADAS EN INDEX PARA LOGRAR UNIFORMIDAD--*/
 /*-------FIN PAGINA LIBROS-------*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
 /*-------INICIO PÁGINA TOP 10-------*/
 .top-10 {
@@ -158,10 +145,10 @@ main .contenedor {
   text-align: center;
   margin: 10px; }
   .top-10 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 20px; }
   .top-10 p {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-style: italic; }
 
 .tabla {
@@ -182,7 +169,7 @@ main .contenedor {
     flex-wrap: flex; }
     .tabla div p {
       color: #120200;
-      font-size: 15px;
+      font-size: 0.93rem;
       text-align: center; }
       .tabla div p:first-child {
         font-weight: bold; }
@@ -192,35 +179,34 @@ main .contenedor {
     .tabla div img {
       width: 210px;
       height: 300px; }
-  .tabla #uno {
-    grid-area: uno;
+  .tabla .uno {
     background-color: #ffea73; }
-  .tabla #dos {
-    grid-area: dos;
+  .tabla .dos {
     background-color: silver; }
-  .tabla #tres {
-    grid-area: tres;
+  .tabla .tres {
     background-color: #cd7f32; }
-  .tabla #cuatro {
+  .tabla .uno {
+    grid-area: uno; }
+  .tabla .dos {
+    grid-area: dos; }
+  .tabla .tres {
+    grid-area: tres; }
+  .tabla .cuatro {
     grid-area: cuatro; }
-  .tabla #cinco {
+  .tabla .cinco {
     grid-area: cinco; }
-  .tabla #seis {
+  .tabla .seis {
     grid-area: seis; }
-  .tabla #siete {
+  .tabla .siete {
     grid-area: siete; }
-  .tabla #ocho {
+  .tabla .ocho {
     grid-area: ocho; }
-  .tabla #nueve {
+  .tabla .nueve {
     grid-area: nueve; }
-  .tabla #diez {
+  .tabla .diez {
     grid-area: diez; }
 
 /*-----FIN PÁGINA TOP 10-----*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--MAP USADO EN LAS MAINs LIBROS, TOP-10 Y QUIENES-SOMOS--*/
 /*--MIXIN USADO EN _MAIN-QUIENES-SOMOS--*/
 /*----INICIO PÁGINA QUIÉNES SOMOS----*/
@@ -228,7 +214,7 @@ main .contenedor {
   margin: 10px; }
   .quienes-somos h2 {
     color: #120200;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px; }
 
@@ -236,13 +222,13 @@ main .contenedor {
   margin: 20px; }
   .historia__titulo {
     color: #120200;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px; }
   .historia p {
     color: #120200;
-    font-size: 15px;
+    font-size: 0.93rem;
     text-align: justify;
     text-indent: 3%; }
 
@@ -250,13 +236,13 @@ main .contenedor {
   margin: 20px; }
   .mision__titulo {
     color: #120200;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px; }
   .mision p {
     color: #120200;
-    font-size: 15px;
+    font-size: 0.93rem;
     text-align: justify;
     text-indent: 3%; }
 
@@ -264,23 +250,21 @@ main .contenedor {
   margin: 20px; }
   .vision__titulo {
     color: #120200;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px; }
   .vision p {
     color: #120200;
-    font-size: 15px;
+    font-size: 0.93rem;
     text-align: justify;
     text-indent: 3%; }
 
 /*-----FIN PAGINA QUIENES SOMOS-----*/
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*-------INICIO PAGINA CONTACTO-------*/
 /*--LA IDEA ES QUE EL FORMULARIO QUEDE EN LA PARTE IZQUIERDA DE LA PÁGINA Y LOS TELÉFONOS EN LA PARTE DERECHA--*/
 .main-contactos {
-  font-size: 15px;
+  font-size: 0.93rem;
   color: #120200;
   display: flex;
   justify-content: space-evenly;
@@ -290,7 +274,7 @@ main .contenedor {
     text-align: center;
     padding: 20px; }
     .main-contactos .formulario-de-contacto h3 {
-      font-size: 30px;
+      font-size: 1.8rem;
       text-decoration: underline;
       margin-bottom: 20px; }
     .main-contactos .formulario-de-contacto .mb-3 .form-control {
@@ -308,7 +292,7 @@ main .contenedor {
     text-align: center;
     padding: 20px; }
     .main-contactos .telefonos-de-contacto h3 {
-      font-size: 30px;
+      font-size: 1.8rem;
       text-decoration: underline;
       margin-bottom: 20px; }
 
@@ -320,8 +304,6 @@ main .contenedor {
   bottom: 50px;
   right: 20px; }
 
-/*--COLOR--*/
-/*--FONT SIZE--*/
 /*--EXTEND USADO EN _MAIN-INDEX Y _FOOTER--*/
 main .contenedor, footer div {
   display: flex;
@@ -338,24 +320,23 @@ footer {
       list-style: none;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      text-align: left; }
       footer div div nav ul a {
         text-decoration: none;
         color: white;
-        font-size: 15px;
+        font-size: 0.93rem;
         font-weight: 400;
         line-height: 150%; }
         footer div div nav ul a:hover {
           color: white;
           text-decoration: underline; }
     footer div .redes-sociales {
-      padding-top: 5px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: start; }
+      text-align: center; }
       footer div .redes-sociales h2 {
-        font-size: 15px;
+        font-size: 0.93rem;
         font-weight: 400; }
       footer div .redes-sociales div a img {
         width: 50px;
@@ -369,10 +350,10 @@ footer {
 /*--INICIO MEDIA QUERIES--*/
 @media screen and (max-width: 1024px) {
   main .carousel .carousel-text {
-    font-size: 60px; }
+    font-size: 3.75rem; }
   .boton-whatsapp img {
-    width: 60px;
-    height: 60px; }
+    width: 3.75rem;
+    height: 3.75rem; }
   .tabla {
     padding: 10px;
     grid-template-columns: 1fr;
@@ -384,35 +365,35 @@ footer {
 
 @media screen and (max-width: 888px) {
   main .carousel .carousel-text {
-    font-size: 50px; } }
+    font-size: 3.125rem; } }
 
 @media screen and (max-width: 700px) {
   main .carousel .carousel-text {
-    font-size: 30px; } }
+    font-size: 1.8rem; } }
 
 @media screen and (max-width: 492px) {
   .libros h2 {
-    font-size: 30px; }
+    font-size: 1.8rem; }
   .libros p {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .top-10 h2 {
-    font-size: 30px; }
+    font-size: 1.8rem; }
   .top-10 p {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .quienes-somos h2 {
-    font-size: 30px; }
+    font-size: 1.8rem; }
   .historia__titulo {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .mision__titulo {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .vision__titulo {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .main-contactos .formulario-de-contacto h3 {
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .main-contactos .formulario-de-contacto .boton-formulario {
     width: 40%; }
   .main-contactos .telefonos-de-contacto h3 {
-    font-size: 20px; } }
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 430px) {
   .grid-config {
@@ -423,9 +404,8 @@ footer {
     main .contenedor .card:hover {
       display: none; }
   .boton-whatsapp img {
-    width: 40px;
-    height: 40px; } }
+    display: none; } }
 
 @media screen and (max-width: 375px) {
   main .carousel .carousel-text {
-    font-size: 25px; } }
+    font-size: 1.563rem; } }

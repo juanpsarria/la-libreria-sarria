@@ -14,6 +14,7 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: left;
             a{
                 text-decoration: none;
                 color: $color-segundo;
@@ -27,11 +28,9 @@ footer {
             }
         }
         .redes-sociales {
-            padding-top: 5px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: start;
+            text-align: center;
             h2 {
                 font-size: $size-quinto;
                 font-weight: 400;
