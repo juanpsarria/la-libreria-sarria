@@ -28,14 +28,18 @@ footer {
 /*--INICIO HEADER--*/
 header {
   color: white;
-  background-color: #120200; }
+  background-color: #120200;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  max-width: 100%;
+  z-index: 1000000; }
   header h1 {
     display: none; }
   header .navbar-brand {
     font-size: 2.5rem;
     font-weight: 600; }
-    header .navbar-brand:hover {
-      text-decoration: underline; }
     header .navbar-brand img {
       width: 60px;
       height: 60px; }
@@ -52,7 +56,8 @@ header {
 /*--FIN HEADER--*/
 /*--INICIO SEARCHER--*/
 .buscador {
-  background-color: #120200; }
+  background-color: #120200;
+  padding-top: 100px; }
   .buscador .btn {
     color: white;
     font-size: 0.93rem;
@@ -316,35 +321,33 @@ footer {
   background-color: #120200; }
   footer div {
     flex-wrap: wrap; }
-    footer div div nav ul {
+    footer div .ayuda nav ul {
+      padding: 5px;
       list-style: none;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: left; }
-      footer div div nav ul a {
+      align-items: left;
+      justify-content: center; }
+      footer div .ayuda nav ul a {
         text-decoration: none;
         color: white;
         font-size: 0.93rem;
         font-weight: 400;
         line-height: 150%; }
-        footer div div nav ul a:hover {
+        footer div .ayuda nav ul a:hover {
           color: white;
           text-decoration: underline; }
     footer div .redes-sociales {
-      display: flex;
-      flex-direction: column;
-      text-align: center; }
-      footer div .redes-sociales h2 {
-        font-size: 0.93rem;
-        font-weight: 400; }
-      footer div .redes-sociales div a img {
-        width: 50px;
-        height: 50px; }
-    footer div .mapa {
       padding: 5px;
-      justify-content: center;
-      align-items: center; }
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      footer div .redes-sociales a img {
+        width: 60px;
+        height: 60px;
+        padding: 5px; }
+    footer div .mapa {
+      padding: 5px; }
 
 /*--FIN FOOTER--*/
 /*--INICIO MEDIA QUERIES--*/
@@ -407,5 +410,10 @@ footer {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  header .navbar-brand {
+    font-size: 1.8rem; }
+    header .navbar-brand img {
+      width: 50px;
+      height: 50px; }
   main .carousel .carousel-text {
     font-size: 1.563rem; } }

@@ -3,17 +3,20 @@
 /*--INICIO HEADER--*/
 
 header{
+    color: $color-segundo;
+    background-color: $color-primero;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    max-width:100%;
+    z-index:1000000;
     h1{
         display: none;
     }
-    color: $color-segundo;
-    background-color: $color-primero;
     .navbar-brand{
         font-size: $size-segundo;
         font-weight: 600;
-        &:hover{
-        text-decoration: underline;
-        }
         img{
             width: 60px;
             height: 60px;

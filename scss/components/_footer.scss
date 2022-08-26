@@ -9,12 +9,13 @@ footer {
     div {
         @extend %flex;
         flex-wrap: wrap;
-        div nav ul {
+        .ayuda nav ul {
+            padding: 5px;
             list-style: none;
             display: flex;
             flex-direction: column;
+            align-items: left;
             justify-content: center;
-            text-align: left;
             a{
                 text-decoration: none;
                 color: $color-segundo;
@@ -28,22 +29,18 @@ footer {
             }
         }
         .redes-sociales {
+            padding: 5px;
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            h2 {
-                font-size: $size-quinto;
-                font-weight: 400;
-            }
-            div a img{
-                width: 50px;
-                height: 50px;
+            align-items: center;
+            justify-content: center;
+            a img{
+                width: 60px;
+                height: 60px;
+                padding: 5px;
             }
         }
         .mapa {
             padding: 5px;
-            justify-content: center;
-            align-items: center;
         }
     }
 }
