@@ -350,6 +350,31 @@ footer {
       padding: 5px; }
 
 /*--FIN FOOTER--*/
+.body404 {
+  background-image: url("https://images.pexels.com/photos/720684/pexels-photo-720684.jpeg?cs=srgb&dl=pexels-christopher-schruff-720684.jpg&fm=jpg");
+  background-size: cover; }
+  .body404 main {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 1px #120200;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; }
+    .body404 main .error404 {
+      font-size: 4.6rem; }
+    .body404 main .error404-contenido {
+      font-size: 2.5rem;
+      text-align: center; }
+    .body404 main .error404-enlace {
+      font-size: 1.8rem; }
+      .body404 main .error404-enlace a {
+        text-decoration: none;
+        color: white; }
+        .body404 main .error404-enlace a:hover {
+          text-decoration: underline; }
+
 /*--INICIO MEDIA QUERIES--*/
 @media screen and (max-width: 1024px) {
   main .carousel .carousel-text {

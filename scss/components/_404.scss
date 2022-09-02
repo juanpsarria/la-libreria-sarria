@@ -1,0 +1,33 @@
+@import "../base/variables";
+
+.body404{
+    background-image:url("https://images.pexels.com/photos/720684/pexels-photo-720684.jpeg?cs=srgb&dl=pexels-christopher-schruff-720684.jpg&fm=jpg");
+    background-size: cover;
+    main{
+        font-family: 'Poppins', sans-serif;
+        color: $color-segundo;
+        text-shadow: 2px 2px 1px $color-primero;
+        display:flex;
+        height:100vh;
+        justify-content:start;
+        align-items:center;
+        flex-direction:column;
+        .error404{
+            font-size: $size-primero;
+        }
+        .error404-contenido{
+            font-size: $size-segundo;
+            text-align:center;
+        }
+        .error404-enlace{
+            font-size: $size-tercero;
+            a{
+                text-decoration: none;
+                color: $color-segundo;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }  
+}        
